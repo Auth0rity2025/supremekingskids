@@ -175,7 +175,38 @@ ul li a:hover{
 
 }
 
+
+  @media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+}
+
 .btnn:hover{
     background-color: #ffffff;
     color:rgb(75, 82, 180) ;
 }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu.show {
+    display: block;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search {
+    display: none; 
+  }
