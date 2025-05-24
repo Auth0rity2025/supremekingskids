@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>webpage design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
+        <nav class="navbar">
             <div class="icon">
-                <h2><class class="logo">Auth0rity</class></h2>
-                
+                <h2 class="logo">Auth0rity</h2>
             </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="meet.htm">ABOUT</a></li>
+                    <li><a href="Contact.htm">CONTACT</a></li>
+                    <li><a href="Enroll.htm">ENROLL</a></li>
+                    <li><a href="#">PAY</a></li>   
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="What's on your mind">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
 
-              <div class="menu">
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="meet.htm">ABOUT</a></li>
-            <li><a href="Contact.htm">CONTACT</a></li>
-              <li><a href="Enroll.htm">ENROLL</a></li>
-                <li><a href="#">PAY</a></li>   
-          </ul>
-        </div>
+        <section class="content">
+            <h1>Website Testrun</h1>
+            <p>I just wanna be the best in the world</p>
+        </section>
 
-        <div class="search">
-            <input class="srch" type="search" name="" placeholder="whats on your mind">
-            <a href="#"><button class="btn">search</button></a>
-        </div>
-
-       
-
+        <section class="form">
+            <h2>Login Here</h2>
+            <input type="email" placeholder="Enter email here">
+            <input type="password" placeholder="Enter password">
+            <button class="btnn"><a href="#">Login</a></button>
+            <p class="link">Don’t have an account yet? <a href="#">Sign up here</a></p>
+            <p class="liw">Log in with</p>
+        </section>
     </div>
-     <div class="content">
-            <h1 >website testrun</h1>
-            <p>i just wanna be the best in the world</p>
-        </div>
 
-        <div class="form">
-            <h2>login here</h2>
-            <input type="email" name="email" placeholder="enter email here ">
-            <input type="password" name="password" placeholder="enter password">
-           <button class="btnn"><a href="#">login</a></button>
-
-           <p class="link">Dont have an account yet</p><br>
-           <a href="#">sign up here</a>
-           <p class="liw">log in with</p>
-        </div>
-        
-    </div>
+    <!-- Optional script for responsive menu toggle -->
     <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-</script>
-
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('show');
+            });
+        }
+    </script>
 </body>
 </html>
